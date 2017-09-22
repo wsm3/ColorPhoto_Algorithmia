@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorPhoto_Algorithmia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJ7-F8-vfm">
+                                <rect key="frame" x="32" y="51" width="310" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7y-FR-xCT">
+                                <rect key="frame" x="156" y="101" width="63" height="30"/>
+                                <state key="normal" title="Get color"/>
+                                <connections>
+                                    <action selector="GetColorBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUW-ba-9ff"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MTi-9p-FcN">
+                                <rect key="frame" x="0.0" y="153" width="375" height="398"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="398" id="Z5o-Sd-xUg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MTi-9p-FcN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Ae-0E-2sh"/>
+                            <constraint firstItem="MTi-9p-FcN" firstAttribute="centerX" secondItem="mJ7-F8-vfm" secondAttribute="centerX" id="CGC-Fz-hpH"/>
+                            <constraint firstItem="MTi-9p-FcN" firstAttribute="centerX" secondItem="Y7y-FR-xCT" secondAttribute="centerX" id="afE-25-iYZ"/>
+                            <constraint firstItem="mJ7-F8-vfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="dQR-ce-eKO"/>
+                            <constraint firstItem="MTi-9p-FcN" firstAttribute="top" secondItem="Y7y-FR-xCT" secondAttribute="bottom" constant="22" id="eXH-On-RW7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MTi-9p-FcN" secondAttribute="bottom" constant="116" id="iua-Me-6TU"/>
+                            <constraint firstItem="mJ7-F8-vfm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="lgf-Wi-UOd"/>
+                            <constraint firstItem="MTi-9p-FcN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oDX-Oe-9oW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageUrlText" destination="mJ7-F8-vfm" id="EsI-qo-BvK"/>
+                        <outlet property="ImgV" destination="MTi-9p-FcN" id="wXG-ma-qhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ColorPhoto_Algorithmia {
+  umbrella header "Pods-ColorPhoto_Algorithmia-umbrella.h"
+
+  export *
+  module * { export * }
+}

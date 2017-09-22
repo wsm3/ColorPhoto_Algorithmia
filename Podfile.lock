@@ -1,0 +1,15 @@
+PODS:
+  - algorithmia (0.1.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - algorithmia
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  algorithmia: 96845d613f35d6ec555c0ab54bf620a285cdb2d4
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: c73d3cd6ba399eceb9da28733fe6ff6273c33908
+
+COCOAPODS: 1.2.0
